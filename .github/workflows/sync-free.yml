@@ -25,7 +25,7 @@ jobs:
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/ljhnchina/docker.git"
+          source_repo: "https://gitee.com/jiandjh/docker.git
           source_branch: "main"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
@@ -36,6 +36,6 @@ jobs:
         with:
           src: github/lxrcbw
           dst: gitee/lxrcbw
-          static_list: "docker_ljhnchina"
+          static_list: "docker_jiandjh"
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
